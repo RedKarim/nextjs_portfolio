@@ -23,7 +23,9 @@ const HeroContent = () => {
           className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-          <h1 className="Welcome-text text-[13px]">My Development Portfolio</h1>
+          <h1 className="Welcome-text text-[13px]">
+            Mahdyar Karimi`s Portfolio
+          </h1>
         </motion.div>
 
         <motion.div
@@ -44,9 +46,9 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m AWS Certified front-end developer skilled in web development.
-          Passionate about blockchain, machine learning, and creating impactful
-          digital solutions.
+          I&apos;m an AWS Certified front-end developer skilled in web
+          development. Passionate about blockchain, machine learning, and
+          creating impactful digital solutions.
         </motion.p>
       </div>
 
