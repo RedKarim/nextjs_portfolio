@@ -46,7 +46,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m an AWS Certified front-end developer skilled in web
+          I&apos;m an AWS Certified entry-level developer skilled in web
           development. Passionate about blockchain, machine learning, and
           creating impactful digital solutions.
         </motion.p>
