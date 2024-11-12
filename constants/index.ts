@@ -64,8 +64,8 @@ export const Socials = [
 
 export const Frontend_skill = [
   {
-    skill_name: "Django",
-    Image: "/Django1.png",
+    skill_name: "django",
+    Image: "/django1.png",
     width: 80,
     height: 80,
   },
@@ -109,8 +109,8 @@ export const Backend_skill = [
     height: 80,
   },
   {
-    skill_name: "Linux",
-    Image: "/Linux.png",
+    skill_name: "linux",
+    Image: "/linux.png",
     width: 110,
     height: 110,
   },
