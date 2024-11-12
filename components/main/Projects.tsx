@@ -15,16 +15,19 @@ const Projects = () => {
           src="/pokerun.png"
           title="Poke-Run"
           description="A simple game made by jQuery and it uses PokeApi for fetching the pictures of all pokemons. You are Pikachu and if you hit other pokemons you lose."
+          githubLink="https://github.com/RedKarim/PokeRun-jQuery-and-API-fetching-by-AJAX-"
         />
         <ProjectCard
           src="/KanjiQuiz.png"
           title="KANJI learning web application"
           description="A KANJI learning web application for international students in Japan. Dev tools used are Django, MariaDb for SQL database, Bootstrap for design"
+          githubLink="https://github.com/RedKarim/KANJI-quiz-for-international-students-in-Japan"
         />
         <ProjectCard
           src="/yama.png"
           title="Yama Renovate"
           description="A simple HTML, CSS, JS website that I started making from the phone version."
+          githubLink="https://github.com/RedKarim/Yama-renovate-started-from-the-MobilePhone-version-"
         />
       </div>
     </div>
