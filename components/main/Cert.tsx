@@ -35,7 +35,9 @@ const Encryption = () => {
               />
             </div>
             <div className="Welcome-box px-[15px] py-[4px] z-[20] brder my-[20px] border-[#7042f88b] opacity-[0.9]">
-              <h1 className="Welcome-text text-[12px]">Left Badge Title</h1>
+              <h1 className="Welcome-text text-[12px]">
+                Interested in Machine learning
+              </h1>
             </div>
           </div>
 
@@ -67,7 +69,9 @@ const Encryption = () => {
               />
             </div>
             <div className="Welcome-box px-[15px] py-[4px] z-[20] brder my-[20px] border-[#7042f88b] opacity-[0.9]">
-              <h1 className="Welcome-text text-[12px]">Right Badge Title</h1>
+              <h1 className="Welcome-text text-[12px]">
+                Interested in Blockchain
+              </h1>
             </div>
           </div>
         </div>
