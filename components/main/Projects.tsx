@@ -18,13 +18,13 @@ const Projects = () => {
           githubLink="https://github.com/RedKarim/PokeRun-jQuery-and-API-fetching-by-AJAX-"
         />
         <ProjectCard
-          src="/kanjiQuiz.png"
+          src="/kanjiquiz.png"
           title="KANJI learning web application"
           description="A KANJI learning web application for international students in Japan. Dev tools used are Django, MariaDb for SQL database, Bootstrap for design"
           githubLink="https://github.com/RedKarim/KANJI-quiz-for-international-students-in-Japan"
         />
         <ProjectCard
-          src="/yama.png"
+          src="/yamareno.png"
           title="Yama Renovate"
           description="A simple HTML, CSS, JS website that I started making from the phone version."
           githubLink="https://github.com/RedKarim/Yama-renovate-started-from-the-MobilePhone-version-"

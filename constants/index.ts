@@ -95,7 +95,7 @@ export const Frontend_skill = [
   },
   {
     skill_name: "Git",
-    Image: "/git.png",
+    Image: "/Git.png",
     width: 80,
     height: 80,
   },
