@@ -23,20 +23,53 @@ const Encryption = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center translate-y-[-10px] absolute z-[20] w-auto h-auto">
-        <div className="flex flex-col items-center group cursor-pointer w-auto h-auto">
-          <Image
-            src="/AWSbadge.png"
-            alt="AWSbadge"
-            width={150}
-            height={150}
-            className=" z-10"
-          />
-        </div>
+        <div className="flex flex-row items-center justify-center gap-8">
+          <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center group cursor-pointer w-auto h-auto">
+              <Image
+                src="/ML.png"
+                alt="ML"
+                width={150}
+                height={150}
+                className="z-10"
+              />
+            </div>
+            <div className="Welcome-box px-[15px] py-[4px] z-[20] brder my-[20px] border-[#7042f88b] opacity-[0.9]">
+              <h1 className="Welcome-text text-[12px]">Left Badge Title</h1>
+            </div>
+          </div>
 
-        <div className="Welcome-box px-[15px] py-[4px] z-[20] brder my-[20px] border-[#7042f88b] opacity-[0.9]">
-          <h1 className="Welcome-text text-[12px]">
-            AWS solutions architect associate certification
-          </h1>
+          <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center group cursor-pointer w-auto h-auto">
+              <Image
+                src="/AWSbadge.png"
+                alt="AWSbadge"
+                width={150}
+                height={150}
+                className="z-10"
+              />
+            </div>
+            <div className="Welcome-box px-[15px] py-[4px] z-[20] brder my-[20px] border-[#7042f88b] opacity-[0.9]">
+              <h1 className="Welcome-text text-[12px]">
+                AWS solutions architect associate certification
+              </h1>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center group cursor-pointer w-auto h-auto">
+              <Image
+                src="/BL.png"
+                alt="blockchain"
+                width={150}
+                height={150}
+                className="z-10"
+              />
+            </div>
+            <div className="Welcome-box px-[15px] py-[4px] z-[20] brder my-[20px] border-[#7042f88b] opacity-[0.9]">
+              <h1 className="Welcome-text text-[12px]">Right Badge Title</h1>
+            </div>
+          </div>
         </div>
       </div>
       <div className="absolute z-[20] bottom-[10px] px-[5px]">
