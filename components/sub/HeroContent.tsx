@@ -33,12 +33,12 @@ const HeroContent = () => {
           className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
-            Always
+            Mahdyar Karimi,
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               {" "}
-              trying to LEARN{" "}
+              Iranian student in Japan{" "}
             </span>
-            new things
+            Always Learning
           </span>
         </motion.div>
 
@@ -51,8 +51,11 @@ const HeroContent = () => {
           creating impactful digital solutions.
         </motion.p>
         <motion.a
+          href="/cv.pdf" // Adjust the file path if needed
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          target="_blank" // Opens in a new tab
+          rel="noopener noreferrer" // Security measure for external links
         >
           Take a look at my CV!
         </motion.a>
