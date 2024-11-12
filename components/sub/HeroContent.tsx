@@ -38,7 +38,7 @@ const HeroContent = () => {
               {" "}
               Iranian student in Japan{" "}
             </span>
-            Always Learning
+            Always Trying to Learn
           </span>
         </motion.div>
         <motion.p
