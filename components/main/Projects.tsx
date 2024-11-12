@@ -22,9 +22,9 @@ const Projects = () => {
           description="A KANJI learning web application for international students in Japan. Dev tools used are Django, MariaDb for SQL database, Bootstrap for design"
         />
         <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/yama.png"
+          title="Yama Renovate"
+          description="A simple HTML, CSS, JS website that I started making from the phone version."
         />
       </div>
     </div>
