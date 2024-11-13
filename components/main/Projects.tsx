@@ -12,19 +12,19 @@ const Projects = () => {
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
-          src="/pokerun.png"
+          src="/pokerungif.gif"
           title="Poke-Run"
           description="A simple game made by jQuery and it uses PokeApi for fetching the pictures of all pokemons. You are Pikachu and if you hit other pokemons you lose."
           githubLink="https://github.com/RedKarim/PokeRun-jQuery-and-API-fetching-by-AJAX-"
         />
         <ProjectCard
-          src="/kanjiquizzz.png"
+          src="/kanjiquizgif.gif"
           title="KANJI learning web application"
           description="A KANJI learning web application for international students in Japan. Dev tools used are Django, MariaDb for SQL database, Bootstrap for design"
           githubLink="https://github.com/RedKarim/KANJI-quiz-for-international-students-in-Japan"
         />
         <ProjectCard
-          src="/yamarenove.png"
+          src="/yamarenogif.gif"
           title="Yama Renovate"
           description="A simple HTML, CSS, JS website that I started making from the phone version."
           githubLink="https://github.com/RedKarim/Yama-renovate-started-from-the-MobilePhone-version-"
