@@ -24,10 +24,10 @@ const Projects = () => {
           githubLink="https://github.com/RedKarim/KANJI-quiz-for-international-students-in-Japan"
         />
         <ProjectCard
-          src="/yamarenogif.gif"
-          title="Yama Renovate"
-          description="A simple HTML, CSS, JS website that I started making from the phone version."
-          githubLink="https://github.com/RedKarim/Yama-renovate-started-from-the-MobilePhone-version-"
+          src="/cvreaderai.gif"
+          title="Local CV Chatbot"
+          description="A local AI chatbot that reads your CV and answers questions about it. Built with Llama 3 and Gradio. Your data stays on your machine."
+          githubLink="https://github.com/RedKarim/localChatbotLama3"
         />
       </div>
     </div>

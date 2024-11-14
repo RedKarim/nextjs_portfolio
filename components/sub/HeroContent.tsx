@@ -50,7 +50,7 @@ const HeroContent = () => {
           creating impactful digital solutions.
         </motion.p>
         <motion.a
-          href="/cv.pdf" // Adjust the file path if needed
+          href="/karimimahdyarcv.pdf" // Adjust the file path if needed
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
           target="_blank" // Opens in a new tab
