@@ -18,12 +18,13 @@ const About = () => {
         variants={slideInFromLeft(0.5)}
         className="w-full md:w-1/2 flex justify-center"
       >
-        <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-purple-500/30">
+        <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-purple-500/30 flex items-center justify-center">
           <Image
-            src="/profile.jpg"
+            src="/mainIconsdark.svg"
             alt="Mahdyar Karimi"
-            fill
-            className="object-cover"
+            width={300}
+            height={300}
+            className="object-contain"
           />
         </div>
       </motion.div>
