@@ -50,14 +50,14 @@ const About = () => {
         </h2>
 
         <p className="text-gray-300 text-lg">
-          I'm Mahdyar Karimi, an AWS Certified developer currently studying in
+          I&apos;m Mahdyar Karimi, an AWS Certified developer currently studying in
           Japan. With a passion for technology and innovation, I specialize in
           creating modern web applications and exploring emerging technologies.
         </p>
 
         <p className="text-gray-300 text-lg">
           My journey in tech began with web development, and has since expanded
-          to include cloud computing and Control Engineering. I'm constantly
+          to include cloud computing and Control Engineering. I&apos;m constantly
           learning and adapting to new technologies to stay at the forefront of
           the industry.
         </p>

@@ -30,7 +30,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.5)}
           className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
         >
-          <span className="text-white">Hi, I'm </span>
+          <span className="text-white">Hi, I&apos;m </span>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
             Mahdyar Karimi
           </span>
