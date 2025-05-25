@@ -39,21 +39,21 @@ const About = () => {
         <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
           About Me
         </h2>
-        
+
         <p className="text-gray-300 text-lg">
-          I'm Mahdyar Karimi, an AWS Certified developer currently studying in Japan. With a passion for technology and innovation, I specialize in creating modern web applications and exploring emerging technologies.
+          I'm Mahdyar Karimi, an AWS Certified developer currently studying in
+          Japan. With a passion for technology and innovation, I specialize in
+          creating modern web applications and exploring emerging technologies.
         </p>
-        
+
         <p className="text-gray-300 text-lg">
-          My journey in tech began with web development, and has since expanded to include blockchain technology, machine learning, and cloud computing. I'm constantly learning and adapting to new technologies to stay at the forefront of the industry.
+          My journey in tech began with web development, and has since expanded
+          to include cloud computing and Control Engineering. I'm constantly
+          learning and adapting to new technologies to stay at the forefront of
+          the industry.
         </p>
-        
-        <p className="text-gray-300 text-lg">
-          When I'm not coding, I enjoy exploring Japan, learning about different cultures, and contributing to open-source projects that make a positive impact on the world.
-        </p>
-        
         <div className="flex flex-row gap-4 mt-4">
-          <a 
+          <a
             href="/karimimahdyarcv.pdf"
             className="py-2 px-6 button-primary text-center text-white cursor-pointer rounded-lg hover:opacity-90 transition-all duration-300"
             target="_blank"
@@ -61,7 +61,7 @@ const About = () => {
           >
             Download CV
           </a>
-          <a 
+          <a
             href="#contact"
             className="py-2 px-6 border border-purple-500 text-center text-white cursor-pointer rounded-lg hover:bg-purple-500/20 transition-all duration-300"
           >
