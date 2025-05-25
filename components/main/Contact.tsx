@@ -29,19 +29,45 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    // Create a form data object to send
+    const formDataToSend = new FormData();
+    formDataToSend.append('name', formData.name);
+    formDataToSend.append('email', formData.email);
+    formDataToSend.append('message', formData.message);
+    
+    // Send the form data to your email using the formsubmit.co service
+    // Replace YOUR_EMAIL with your actual email address
+    fetch('https://formsubmit.co/rhlkr7474@gmail.com', {
+      method: 'POST',
+      body: formDataToSend,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        setIsSubmitting(false);
+        setSubmitMessage("Thank you for your message! I'll get back to you soon.");
+        setFormData({ name: "", email: "", message: "" });
+        
+        // Clear success message after 5 seconds
+        setTimeout(() => {
+          setSubmitMessage("");
+        }, 5000);
+      } else {
+        throw new Error('Form submission failed');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
       setIsSubmitting(false);
-      setSubmitMessage(
-        "Thank you for your message! I'll get back to you soon."
-      );
-      setFormData({ name: "", email: "", message: "" });
-
-      // Clear success message after 5 seconds
+      setSubmitMessage("There was an error sending your message. Please try again later.");
+      
+      // Clear error message after 5 seconds
       setTimeout(() => {
         setSubmitMessage("");
       }, 5000);
-    }, 1500);
+    });
   };
 
   return (
@@ -148,9 +174,16 @@ const Contact = () => {
           className="w-full md:w-1/2"
         >
           <form
+            action="https://formsubmit.co/rhlkr7474@gmail.com"
+            method="POST"
             onSubmit={handleSubmit}
-            className="bg-[#0A0A1B] p-8 rounded-xl border border-[#2A0E61]"
+            className="bg-[#0A0A1B] p-8 rounded-xl border border-[#2A0E61] relative z-[50]"
           >
+            {/* FormSubmit.co configuration */}
+            <input type="hidden" name="_subject" value="New Portfolio Contact Message" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://redkarim.vercel.app/#contact" />
             <div className="mb-6">
               <label htmlFor="name" className="block text-gray-300 mb-2">
                 Name
