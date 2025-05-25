@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Backend_skill,
   Frontend_skill,
@@ -5,16 +7,22 @@ import {
   Other_skill,
   Skill_data,
 } from "@/constants";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SkillDataProvider from "../sub/SkillDataProvider";
 import SkillText from "../sub/SkillText";
 
 const Skills = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   return (
     <section
       id="skills"
       className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-80 py-20"
-      style={{ transform: "scale(0.9" }}
+      style={{ transform: "scale(0.9)" }}
     >
       <SkillText />
 
@@ -77,15 +85,17 @@ const Skills = () => {
 
       <div className="w-full h-full absolute">
         <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">
-          <video
-            className="w-full h-auto"
-            preload="false"
-            playsInline
-            loop
-            muted
-            autoPlay
-            src="/cards-video.webm"
-          />
+          {isMounted && (
+            <video
+              className="w-full h-auto"
+              preload="none"
+              playsInline
+              loop
+              muted
+              autoPlay
+              src="/cards-video.webm"
+            />
+          )}
         </div>
       </div>
     </section>

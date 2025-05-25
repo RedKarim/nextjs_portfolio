@@ -1,11 +1,17 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
 import Image from "next/image";
 
 const Encryption = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   return (
     <div className="flex flex-col md:flex-row relative items-center justify-center min-h-screen w-full h-full">
       <div className="absolute w-auto h-auto top-0 z-[5] -mt-24 md:-mt-0 md:top-0 sm:-mt-[150px]">
@@ -84,15 +90,17 @@ const Encryption = () => {
       </div>
 
       <div className="w-full flex items-start justify-center absolute">
-        <video
-          loop
-          muted
-          autoPlay
-          playsInline
-          preload="false"
-          className="w-full h-auto"
-          src="/encryption.webm/"
-        />
+        {isMounted && (
+          <video
+            loop
+            muted
+            autoPlay
+            playsInline
+            preload="none"
+            className="w-full h-auto"
+            src="/encryption.webm"
+          />
+        )}
       </div>
     </div>
   );
