@@ -23,9 +23,7 @@ const HeroContent = () => {
           className="flex items-center py-2 px-4 border border-[#7042f88b] bg-[#0300145e] rounded-full w-fit"
         >
           <SparklesIcon className="text-purple-500 mr-2 h-5 w-5" />
-          <p className="text-sm text-gray-300">
-            AWS Certified Developer
-          </p>
+          <p className="text-sm text-gray-300">AWS Certified Developer</p>
         </motion.div>
 
         <motion.h1
@@ -37,22 +35,23 @@ const HeroContent = () => {
             Mahdyar Karimi
           </span>
         </motion.h1>
-        
+
         <motion.h2
           variants={slideInFromLeft(0.6)}
           className="text-2xl md:text-3xl font-semibold text-gray-300"
         >
-          Web Developer & AI Enthusiast
+          Web Developer & Cloud Enthusiast
         </motion.h2>
-        
+
         <motion.p
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 max-w-[600px] leading-relaxed"
         >
-          An Iranian student in Japan with a passion for creating impactful digital solutions. 
-          Skilled in web development, blockchain technology, and machine learning.
+          An Iranian student in Japan with a passion for creating impactful
+          digital solutions. Skilled in web development, cloud computing and
+          Control Engineering.
         </motion.p>
-        
+
         <motion.div
           variants={slideInFromLeft(1)}
           className="flex flex-wrap gap-4 mt-2"
@@ -64,31 +63,58 @@ const HeroContent = () => {
             rel="noopener noreferrer"
           >
             <span>Download CV</span>
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+              />
             </svg>
           </a>
-          
+
           <a
             href="#contact"
             className="py-3 px-6 border border-purple-500 text-white rounded-full hover:bg-purple-500/20 transition-all duration-300 flex items-center gap-2"
           >
             <span>Contact Me</span>
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
             </svg>
           </a>
         </motion.div>
-        
+
         <motion.div
           variants={slideInFromLeft(1.2)}
           className="flex items-center gap-4 mt-6"
         >
           <p className="text-gray-400">Tech Stack:</p>
           <div className="flex gap-3">
-            {["/tech/react.png", "/tech/js.png", "/tech/python.png", "/tech/aws.png"].map((tech, index) => (
-              <div 
-                key={index} 
+            {[
+              "/tech/react.png",
+              "/tech/js.png",
+              "/tech/python.png",
+              "/tech/aws.png",
+            ].map((tech, index) => (
+              <div
+                key={index}
                 className="w-10 h-10 rounded-full bg-[#1a1a2e] flex items-center justify-center p-1 hover:bg-[#2A0E61] transition-colors duration-300"
               >
                 <Image src={tech} alt="technology" width={30} height={30} />
