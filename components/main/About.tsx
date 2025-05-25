@@ -18,14 +18,22 @@ const About = () => {
         variants={slideInFromLeft(0.5)}
         className="w-full md:w-1/2 flex justify-center"
       >
-        <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-purple-500/30 flex items-center justify-center">
-          <Image
-            src="/mainIconsdark.svg"
-            alt="Mahdyar Karimi"
-            width={300}
-            height={300}
-            className="object-contain"
-          />
+        <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden">
+          {/* Animated border effect */}
+          <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-full blur-lg opacity-75 animate-pulse z-0"></div>
+          
+          <div className="relative rounded-full overflow-hidden border-2 border-purple-500/50 h-full w-full">
+            <div className="absolute inset-0 bg-[#030014] z-0"></div>
+            <Image
+              src="/images/aboutme.png"
+              alt="Mahdyar Karimi"
+              fill
+              className="object-cover z-10"
+              priority
+              style={{ objectPosition: '50% 25%', transform: 'scale(1.05)' }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-purple-500/30 via-transparent to-cyan-500/20 opacity-60 z-20"></div>
+          </div>
         </div>
       </motion.div>
 
