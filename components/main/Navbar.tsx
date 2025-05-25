@@ -30,21 +30,19 @@ const Navbar = () => {
   };
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`w-full fixed top-0 z-50 ${scrolled ? 'shadow-lg shadow-[#2A0E61]/50 bg-[#03001499] backdrop-blur-md' : 'bg-transparent'}`}
+      className={`w-full fixed top-0 z-50 ${
+        scrolled
+          ? "shadow-lg shadow-[#2A0E61]/50 bg-[#03001499] backdrop-blur-md"
+          : "bg-transparent"
+      }`}
     >
       <div className="w-full max-w-7xl mx-auto flex items-center justify-between py-4 px-6 md:px-10">
         {/* Logo */}
-        <a
-          href="#about-me"
-          className="flex items-center gap-2 z-50"
-        >
-          <div className="h-10 w-10 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 flex items-center justify-center text-white font-bold text-xl">
-            MK
-          </div>
+        <a href="#about-me" className="flex items-center gap-2 z-50">
           <span className="font-bold text-lg text-white hover:text-purple-400 transition-colors duration-300">
             Mahdyar Karimi
           </span>
@@ -52,32 +50,32 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <a 
-            href="#about-me" 
+          <a
+            href="#about-me"
             className="text-gray-300 hover:text-white hover:underline decoration-purple-500 decoration-2 underline-offset-8 transition-all duration-300"
           >
             Home
           </a>
-          <a 
-            href="#about" 
+          <a
+            href="#about"
             className="text-gray-300 hover:text-white hover:underline decoration-purple-500 decoration-2 underline-offset-8 transition-all duration-300"
           >
             About
           </a>
-          <a 
-            href="#skills" 
+          <a
+            href="#skills"
             className="text-gray-300 hover:text-white hover:underline decoration-purple-500 decoration-2 underline-offset-8 transition-all duration-300"
           >
             Skills
           </a>
-          <a 
-            href="#projects" 
+          <a
+            href="#projects"
             className="text-gray-300 hover:text-white hover:underline decoration-purple-500 decoration-2 underline-offset-8 transition-all duration-300"
           >
             Projects
           </a>
-          <a 
-            href="#contact" 
+          <a
+            href="#contact"
             className="text-gray-300 hover:text-white hover:underline decoration-purple-500 decoration-2 underline-offset-8 transition-all duration-300"
           >
             Contact
@@ -88,7 +86,9 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-4">
           {Socials.map((social) => (
             <a
-              href={social.name === "Github" ? "https://github.com/RedKarim" : "#"}
+              href={
+                social.name === "Github" ? "https://github.com/RedKarim" : "#"
+              }
               target="_blank"
               rel="noopener noreferrer"
               key={social.name}
@@ -106,7 +106,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           className="md:hidden z-50 p-2 text-white focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
@@ -119,7 +119,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: "100%" }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
@@ -127,36 +127,36 @@ const Navbar = () => {
             className="fixed inset-0 bg-[#030014] bg-opacity-95 flex flex-col items-center justify-center z-40"
           >
             <div className="flex flex-col items-center gap-8 text-xl">
-              <a 
-                href="#about-me" 
+              <a
+                href="#about-me"
                 className="text-gray-300 hover:text-white transition-colors duration-300"
                 onClick={handleNavLinkClick}
               >
                 Home
               </a>
-              <a 
-                href="#about" 
+              <a
+                href="#about"
                 className="text-gray-300 hover:text-white transition-colors duration-300"
                 onClick={handleNavLinkClick}
               >
                 About
               </a>
-              <a 
-                href="#skills" 
+              <a
+                href="#skills"
                 className="text-gray-300 hover:text-white transition-colors duration-300"
                 onClick={handleNavLinkClick}
               >
                 Skills
               </a>
-              <a 
-                href="#projects" 
+              <a
+                href="#projects"
                 className="text-gray-300 hover:text-white transition-colors duration-300"
                 onClick={handleNavLinkClick}
               >
                 Projects
               </a>
-              <a 
-                href="#contact" 
+              <a
+                href="#contact"
                 className="text-gray-300 hover:text-white transition-colors duration-300"
                 onClick={handleNavLinkClick}
               >
@@ -167,7 +167,11 @@ const Navbar = () => {
               <div className="flex items-center gap-6 mt-8">
                 {Socials.map((social) => (
                   <a
-                    href={social.name === "Github" ? "https://github.com/RedKarim" : "#"}
+                    href={
+                      social.name === "Github"
+                        ? "https://github.com/RedKarim"
+                        : "#"
+                    }
                     target="_blank"
                     rel="noopener noreferrer"
                     key={social.name}
