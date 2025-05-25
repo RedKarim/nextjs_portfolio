@@ -87,7 +87,7 @@ const Navbar = () => {
           {Socials.map((social) => (
             <a
               href={
-                social.name === "Github" ? "https://github.com/RedKarim" : "#"
+                social.name === "gitwhite" ? "https://github.com/RedKarim" : "#"
               }
               target="_blank"
               rel="noopener noreferrer"
@@ -168,7 +168,7 @@ const Navbar = () => {
                 {Socials.map((social) => (
                   <a
                     href={
-                      social.name === "Github"
+                      social.name === "gitwhite"
                         ? "https://github.com/RedKarim"
                         : "#"
                     }
